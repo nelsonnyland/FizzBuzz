@@ -46,22 +46,26 @@ namespace FizzBuzz
                             Console.Write("Fizz ");
                             count++;
                         }                        
-                        Console.WriteLine("Fizz ");
+                        Console.Write("Fizz ");
                         count++;
                     }
                     if (i % 7 == 0)
                     {
-                        if (i % 2 != 0)
+                        if (i % 2 != 0 && i != 35)
                         {
                             Console.Write("Buzz ");
                             count++;
                         }
-                        Console.WriteLine("Buzz ");
+                        Console.Write("Buzz ");
                         count++;
                     }
                     if (count == 0)
                     {
                         Console.WriteLine(i + " ");
+                    }
+                    else
+                    {
+                        Console.WriteLine("!");
                     }
                 }
             }
